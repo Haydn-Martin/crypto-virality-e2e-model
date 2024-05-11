@@ -1,1 +1,1 @@
-# e2e-crypto-virality-model
+# crypto-virality-e2e-model
