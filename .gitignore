@@ -1,6 +1,9 @@
 # Notes
 Notes.txt
 
+# Data
+crypto_virality_e2e_model/research/whitepaper_examples
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
