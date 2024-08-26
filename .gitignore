@@ -2,7 +2,8 @@
 Notes.txt
 
 # Data
-data/raw_data_gen/research/whitepaper_examples/
+*.csv
+data/raw_data_gen/research/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
