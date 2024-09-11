@@ -4,6 +4,14 @@ import pandas as pd
 from selenium import webdriver
 
 def get_wp_urls(min_page: int, max_page: int) -> None:
+    """
+    Generate a csv containing whitepaper url CSVs.
+
+    :param min_page: the web page number to start collecting URLs
+    :param max_page: the web page to stop collecting URLs
+
+    :return: a csv with whitepaper CSVs
+    """
     link_dict = {}
     driver = webdriver.Chrome()
     for j in range(min_page, max_page):
