@@ -4703,6 +4703,32 @@ objc = ["pyobjc-framework-Cocoa"]
 win32 = ["pywin32"]
 
 [[package]]
+name = "sensai"
+version = "1.2.1"
+description = "The Python library for sensible AI"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sensai-1.2.1-py3-none-any.whl", hash = "sha256:86d3db57d63e9e9792d5e0169069b72a79d85a497ba6b6e0d1b4fd6eb633f7c9"},
+    {file = "sensai-1.2.1.tar.gz", hash = "sha256:ef8357e002386984611b67e8daa4927a100a30e6fef575e65293bb1626f2ca0c"},
+]
+
+[package.dependencies]
+numpy = ">=1.18.0"
+pandas = ">=1.0.0"
+scikit-learn = ">=0.22.0"
+scipy = ">=1.4"
+seaborn = ">=0.11.0"
+typing-extensions = ">=4.6"
+
+[package.extras]
+full = ["Shapely (>=1.7.0)", "geopandas (>=0.7.0)", "lightgbm (>=2.3.0)", "networkx (>=2.4)", "tensorflow (>=2.0)", "torch (>=1.4.0)", "torchtext (>=0.5.0)", "utm (>=0.7.0)"]
+geoanalytics = ["Shapely (>=1.7.0)", "geopandas (>=0.7.0)", "networkx (>=2.4)", "utm (>=0.7.0)"]
+lightgbm = ["lightgbm (>=2.3.0)"]
+tensorflow = ["tensorflow (>=2.0)"]
+torch = ["torch (>=1.4.0)", "torchtext (>=0.5.0)"]
+
+[[package]]
 name = "sentencepiece"
 version = "0.2.0"
 description = "SentencePiece python wrapper"
@@ -5851,4 +5877,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "dea9b42f3dabf1b9802588b7d6a9894f8ef71fc2dc2adf627bb8b16212bfcbbc"
+content-hash = "f835a733191dc11bab9544a544f51bd8e5d970c53e0605455b0e5bfd6ffac660"

@@ -17,6 +17,7 @@ pycoingecko = "^3.1.0"
 beautifulsoup4 = "^4.12.3"
 selenium = "^4.23.1"
 missingno = "^0.5.2"
+sensai = "^1.2.1"
 
 [build-system]
 requires = ["poetry-core"]
