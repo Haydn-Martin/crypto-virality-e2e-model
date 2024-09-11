@@ -1,7 +1,3 @@
-import os
-print(os.getcwd())
-
-
 import logging
 from typing import Optional
 
@@ -73,6 +69,3 @@ class Dataset(ToStringMixin):
         :return: the I/O data
         """
         return InputOutputData.from_data_frame(self.load_data_frame(), self.col_target)
-
-
-print(Dataset(num_samples=10).load_data_frame())
