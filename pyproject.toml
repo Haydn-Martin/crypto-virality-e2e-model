@@ -18,6 +18,7 @@ beautifulsoup4 = "^4.12.3"
 selenium = "^4.23.1"
 missingno = "^0.5.2"
 sensai = "^1.2.1"
+mlflow = "^2.16.1"
 
 [build-system]
 requires = ["poetry-core"]
