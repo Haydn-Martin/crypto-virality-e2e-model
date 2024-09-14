@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Sequence
 
 from sensai.featuregen import FeatureCollector
 from sensai.sklearn.sklearn_regression import SkLearnRandomForestVectorRegressionModel, SkLearnLinearRegressionVectorRegressionModel
@@ -61,7 +62,7 @@ class RegressionModelFactory:
             .with_name(f"Linear{name_suffix}")
 
     @classmethod
-    def create_xgb(cls, name_suffix="",
+    def create_xgb(cls, name_suffix="", features: Sequence[FeatureName] = BASE_FEATURES,
             min_child_weight: Optional[float] = None, **kwargs):
         """
         Create an instance of an XGBoost model.
@@ -71,7 +72,7 @@ class RegressionModelFactory:
 
         :return: XGBoost regression model
         """
-        fc = FeatureCollector(*cls.BASE_FEATURES)
+        fc = FeatureCollector(*features, registry=registry)
         return XGBGradientBoostedVectorRegressionModel(min_child_weight=min_child_weight, **kwargs) \
             .with_feature_collector(fc) \
             .with_name(f"XGBoost{name_suffix}")

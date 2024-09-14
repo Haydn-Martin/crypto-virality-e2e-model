@@ -5,7 +5,7 @@ import pandas as pd
 from sensai import InputOutputData
 from sensai.util.string import ToStringMixin, TagBuilder
 
-import config
+from .config import csv_data_path
 
 log = logging.getLogger(__name__)
 
@@ -55,7 +55,7 @@ class Dataset(ToStringMixin):
 
         :return: the full data frame for this dataset (including the class column)
         """
-        csv_path = config.csv_data_path()
+        csv_path = csv_data_path()
         log.info(f"Loading {self} from {csv_path}")
         df = pd.read_csv(csv_path)
         if self.num_samples is not None:

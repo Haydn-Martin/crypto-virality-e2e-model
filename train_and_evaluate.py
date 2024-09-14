@@ -37,7 +37,7 @@ def main():
     ]
 
     # declare parameters to be used for evaluation, i.e. how to split the data (fraction and random seed)
-    evaluator_params = RegressionEvaluatorParams(fractional_split_test_fraction=0.3)
+    evaluator_params = RegressionEvaluatorParams(fractional_split_test_fraction=0.2)
 
     # use a high-level utility class for evaluating the models based on these parameters, injecting the
     # objects defined above for the tracking of results

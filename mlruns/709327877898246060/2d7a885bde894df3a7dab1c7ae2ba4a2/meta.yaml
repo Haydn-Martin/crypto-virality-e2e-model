@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/haydn/PycharmProjects/crypto-virality-e2e-model/mlruns/709327877898246060/2d7a885bde894df3a7dab1c7ae2ba4a2/artifacts
+end_time: 1726306594467
+entry_point_name: ''
+experiment_id: '709327877898246060'
+lifecycle_stage: active
+run_id: 2d7a885bde894df3a7dab1c7ae2ba4a2
+run_name: 20240914-103627_RandomForest
+run_uuid: 2d7a885bde894df3a7dab1c7ae2ba4a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726306591343
+status: 3
+tags: []
+user_id: haydn

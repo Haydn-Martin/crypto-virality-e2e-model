@@ -1,0 +1,124 @@
+Model comparison results:
+                  RRSE        R2           MAE           MSE          RMSE      StdDevAE
+model_name                                                                              
+Linear        1.546125 -1.390502  2.072407e+10  3.606049e+21  6.005039e+10  5.636100e+10
+RandomForest  1.276605 -0.629721  9.960354e+09  2.458418e+21  4.958243e+10  4.857169e+10
+XGBoost       1.015347 -0.030930  6.041932e+09  1.555147e+21  3.943536e+10  3.896976e+10
+
+Linear = SkLearnLinearRegressionVectorRegressionModel[
+    featureGenerator=MultiFeatureGenerator[
+        featureGenerators=[
+            FeatureGeneratorTakeColumns[
+                columns=[number_pages], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=NUMBER_PAGES], 
+            FeatureGeneratorTakeColumns[
+                columns=[images_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=IMAGES_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[characters_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=CHARACTERS_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[equations_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=EQUATIONS_DENSITY]]], 
+    targetTransformer=None, 
+    fitArgs={}, 
+    featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], 
+    name=Linear, 
+    model=LinearRegression()]
+
+RandomForest = SkLearnRandomForestVectorRegressionModel[
+    featureGenerator=MultiFeatureGenerator[
+        featureGenerators=[
+            FeatureGeneratorTakeColumns[
+                columns=[number_pages], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=NUMBER_PAGES], 
+            FeatureGeneratorTakeColumns[
+                columns=[images_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=IMAGES_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[characters_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=CHARACTERS_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[equations_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=EQUATIONS_DENSITY]]], 
+    targetTransformer=None, 
+    fitArgs={}, 
+    featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], 
+    name=RandomForest, 
+    model[0]=RandomForestRegressor(random_state=42)]
+
+XGBoost = XGBGradientBoostedVectorRegressionModel[
+    featureGenerator=MultiFeatureGenerator[
+        featureGenerators=[
+            FeatureGeneratorTakeColumns[
+                columns=[number_pages], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=NUMBER_PAGES], 
+            FeatureGeneratorTakeColumns[
+                columns=[images_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=IMAGES_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[characters_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=CHARACTERS_DENSITY], 
+            FeatureGeneratorTakeColumns[
+                columns=[equations_density], 
+                exceptColumns=(), 
+                verifyColumnNames=True, 
+                name=EQUATIONS_DENSITY]]], 
+    targetTransformer=None, 
+    fitArgs={}, 
+    featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], 
+    name=XGBoost, 
+    model[0]=XGBRegressor(
+        base_score=None, 
+        booster=None, 
+        callbacks=None, 
+        colsample_bylevel=None, 
+        colsample_bynode=None, 
+        colsample_bytree=None, 
+        device=None, 
+        early_stopping_rounds=None, 
+        enable_categorical=False, 
+        eval_metric=None, 
+        feature_types=None, 
+        gamma=None, 
+        grow_policy=None, 
+        importance_type=None, 
+        interaction_constraints=None, 
+        learning_rate=None, 
+        max_bin=None, 
+        max_cat_threshold=None, 
+        max_cat_to_onehot=None, 
+        max_delta_step=None, 
+        max_depth=None, 
+        max_leaves=None, 
+        min_child_weight=None, 
+        missing=nan, 
+        monotone_constraints=None, 
+        multi_strategy=None, 
+        n_estimators=None, 
+        n_jobs=None, 
+        num_parallel_tree=None, 
+        random_state=42, 
+        ...)]

@@ -1,0 +1,482 @@
+INFO  2024-09-14 10:36:27,752 crypto_virality_e2e_model.data:load_data_frame:59 - Loading Dataset[num_samples=None, random_seed=420, col_target=market_cap] from data\ml_data_set.csv
+INFO  2024-09-14 10:36:27,769 sensai.evaluation.eval_util:compare_models:393 - Evaluating model 1/3 named 'Linear' ...
+DEBUG 2024-09-14 10:36:27,771 sensai.evaluation.evaluator:__init__:182 - <sensai.data.DataSplitterFractional object at 0x000002501854F250> created split with 233 (69.97%) and 100 (30.03%) training and test data points respectively
+INFO  2024-09-14 10:36:27,771 sensai.evaluation.eval_util:perform_simple_evaluation:281 - Evaluating SkLearnLinearRegressionVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=Linear, modelConstructor=LinearRegression(fit_intercept=True)] via <sensai.evaluation.evaluator.VectorRegressionModelEvaluator object at 0x000002501854F450>
+DEBUG 2024-09-14 10:36:27,990 git.cmd:execute:1253 - Popen(['git', 'version'], cwd=C:\Users\haydn\PycharmProjects\crypto-virality-e2e-model, stdin=None, shell=False, universal_newlines=False)
+DEBUG 2024-09-14 10:36:28,074 git.cmd:execute:1253 - Popen(['git', 'version'], cwd=C:\Users\haydn\PycharmProjects\crypto-virality-e2e-model, stdin=None, shell=False, universal_newlines=False)
+DEBUG 2024-09-14 10:36:28,142 git.cmd:execute:1253 - Popen(['git', 'check-ignore', 'C:\\Users\\haydn\\PycharmProjects\\crypto-virality-e2e-model'], cwd=C:\Users\haydn\PycharmProjects\crypto-virality-e2e-model, stdin=None, shell=False, universal_newlines=False)
+DEBUG 2024-09-14 10:36:28,212 git.cmd:execute:1253 - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\haydn\PycharmProjects\crypto-virality-e2e-model, stdin=<valid stream>, shell=False, universal_newlines=False)
+INFO  2024-09-14 10:36:28,370 sensai.vector_model:fit:371 - Fitting SkLearnLinearRegressionVectorRegressionModel instance
+DEBUG 2024-09-14 10:36:28,370 sensai.featuregen.feature_generator:fit_generate:370 - Fitting and generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:28,370 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:28,372 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:28,372 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:28,372 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+DEBUG 2024-09-14 10:36:28,390 sensai.vector_model:fit:394 - Fitting with outputs[1]=['market_cap'], inputs[4]=[number_pages/float64, images_density/float64, characters_density/float64, equations_density/float64]; N=233 data points
+INFO  2024-09-14 10:36:28,419 sensai.vector_model:fit:400 - Fitting completed in 0.03 seconds: SkLearnLinearRegressionVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=Linear, model=LinearRegression()]
+DEBUG 2024-09-14 10:36:28,419 sensai.featuregen.feature_generator:generate:201 - Generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:28,419 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:28,420 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:28,420 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:28,490 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+INFO  2024-09-14 10:36:28,568 sensai.evaluation.eval_util:gather_results:289 - Evaluation results for market_cap: RegressionEvalStats[RRSE=2.400113985562777, R2=-4.760547143694038, MAE=28349201832.306656, MSE=5.860527040686465e+21, RMSE=76554079190.3767, StdDevAE=71111530683.55093, N=100]
+INFO  2024-09-14 10:36:28,568 sensai.util.io.ResultWriter:write_text_file:72 - Saving text file results\market-cap-regression_full\20240914-103627\Linear_evaluator-results.txt
+DEBUG 2024-09-14 10:36:30,455 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,456 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,456 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,456 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,456 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:30,511 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,511 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,511 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,511 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,511 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:30,537 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,537 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,537 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,537 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,537 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:30,546 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,546 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,546 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,547 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,547 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:30,555 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,555 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,555 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,555 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,555 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:30,560 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,562 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,562 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,562 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,563 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:30,569 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,569 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,569 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,569 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,569 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:30,577 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,577 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,577 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,577 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,577 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:30,584 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,585 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,585 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,585 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,585 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:30,691 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\Linear_error-dist.png
+DEBUG 2024-09-14 10:36:30,897 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,897 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,897 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,897 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,897 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:30,900 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,900 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,900 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,900 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,900 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:30,909 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,909 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,909 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,909 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,910 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:30,911 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,911 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,911 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,911 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,911 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:30,912 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,912 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,912 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,912 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,912 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:30,913 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,913 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,913 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,913 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,913 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:30,915 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,915 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,915 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,915 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,915 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:30,916 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,916 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,917 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,917 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,917 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:30,918 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:30,918 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:30,918 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:30,918 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:30,918 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:30,994 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\Linear_heatmap-gt-pred.png
+DEBUG 2024-09-14 10:36:31,170 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,170 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,170 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,170 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,170 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:31,176 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,176 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,176 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,176 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,176 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:31,187 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,188 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,188 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,188 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,188 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:31,190 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,190 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,190 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,190 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,191 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:31,192 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,192 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,192 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,192 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,192 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:31,194 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,194 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,194 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,194 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,194 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:31,196 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,196 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,196 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,196 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,196 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:31,197 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,197 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,197 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,198 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,198 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:31,199 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,199 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,199 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,199 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,199 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:31,209 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\Linear_scatter-gt-pred.png
+INFO  2024-09-14 10:36:31,338 sensai.evaluation.eval_util:compare_models:393 - Evaluating model 2/3 named 'RandomForest' ...
+INFO  2024-09-14 10:36:31,339 sensai.evaluation.eval_util:perform_simple_evaluation:281 - Evaluating SkLearnRandomForestVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=RandomForest, modelConstructor=RandomForestRegressor(n_estimators=100, min_samples_leaf=1, random_state=42)] via <sensai.evaluation.evaluator.VectorRegressionModelEvaluator object at 0x000002501854F450>
+INFO  2024-09-14 10:36:31,396 sensai.vector_model:fit:371 - Fitting SkLearnRandomForestVectorRegressionModel instance
+DEBUG 2024-09-14 10:36:31,396 sensai.featuregen.feature_generator:fit_generate:370 - Fitting and generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:31,396 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:31,397 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:31,398 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:31,398 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+DEBUG 2024-09-14 10:36:31,399 sensai.vector_model:fit:394 - Fitting with outputs[1]=['market_cap'], inputs[4]=[number_pages/int64, images_density/float64, characters_density/float64, equations_density/float64]; N=233 data points
+INFO  2024-09-14 10:36:31,399 sensai.sklearn.sklearn_base:_fit_sklearn:152 - Fitting model for output variable 'market_cap'
+INFO  2024-09-14 10:36:31,518 sensai.vector_model:fit:400 - Fitting completed in 0.12 seconds: SkLearnRandomForestVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=RandomForest, model[0]=RandomForestRegressor(random_state=42)]
+DEBUG 2024-09-14 10:36:31,519 sensai.featuregen.feature_generator:generate:201 - Generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:31,519 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:31,519 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:31,519 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:31,520 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+INFO  2024-09-14 10:36:31,618 sensai.evaluation.eval_util:gather_results:289 - Evaluation results for market_cap: RegressionEvalStats[RRSE=3.614421602347504, R2=-12.064043519516298, MAE=21704687798.671906, MSE=1.329078269772364e+22, RMSE=115285656947.09659, StdDevAE=113224066458.00098, N=100]
+INFO  2024-09-14 10:36:31,619 sensai.util.io.ResultWriter:write_text_file:72 - Saving text file results\market-cap-regression_full\20240914-103627\RandomForest_evaluator-results.txt
+DEBUG 2024-09-14 10:36:31,709 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,709 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,709 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,710 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,710 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:31,713 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,713 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,713 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,713 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,714 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:31,721 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,722 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,722 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,722 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,722 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:31,724 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,724 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,724 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,724 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,724 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:31,725 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,725 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,725 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,725 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,726 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:31,727 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,727 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,727 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,727 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,727 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:31,728 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,728 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,728 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,728 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,728 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:31,729 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,729 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,730 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,730 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,730 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:31,731 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:31,731 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:31,731 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:31,731 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:31,731 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:33,070 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\RandomForest_error-dist.png
+DEBUG 2024-09-14 10:36:34,086 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,086 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,086 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,086 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,086 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:34,089 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,089 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,089 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,089 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,089 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:34,097 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,097 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,098 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,098 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,098 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:34,099 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,099 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,099 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,099 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,099 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:34,100 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,100 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,100 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,101 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,101 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:34,102 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,102 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,102 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,102 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,102 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:34,103 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,103 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,103 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,103 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,103 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:34,104 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,104 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,104 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,104 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,104 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:34,105 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,105 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,105 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,105 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,105 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:34,113 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\RandomForest_heatmap-gt-pred.png
+DEBUG 2024-09-14 10:36:34,283 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,283 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,283 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,283 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,283 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:34,287 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,287 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,287 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,287 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,288 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:34,295 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,295 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,295 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,295 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,295 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:34,297 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,297 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,297 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,297 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,297 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:34,298 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,298 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,298 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,298 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,298 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:34,300 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,300 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,300 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,300 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,300 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:34,302 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,303 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,303 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,303 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,303 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:34,304 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,304 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,305 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,305 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,305 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:34,306 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,307 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,307 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,307 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,307 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:34,319 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\RandomForest_scatter-gt-pred.png
+INFO  2024-09-14 10:36:34,469 sensai.evaluation.eval_util:compare_models:393 - Evaluating model 3/3 named 'XGBoost' ...
+INFO  2024-09-14 10:36:34,469 sensai.evaluation.eval_util:perform_simple_evaluation:281 - Evaluating XGBGradientBoostedVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=XGBoost, modelConstructor=XGBRegressor(random_state=42, min_child_weight=None)] via <sensai.evaluation.evaluator.VectorRegressionModelEvaluator object at 0x000002501854F450>
+INFO  2024-09-14 10:36:34,541 sensai.vector_model:fit:371 - Fitting XGBGradientBoostedVectorRegressionModel instance
+DEBUG 2024-09-14 10:36:34,541 sensai.featuregen.feature_generator:fit_generate:370 - Fitting and generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:34,542 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:34,542 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:34,542 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:34,543 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+DEBUG 2024-09-14 10:36:34,544 sensai.vector_model:fit:394 - Fitting with outputs[1]=['market_cap'], inputs[4]=[number_pages/int64, images_density/float64, characters_density/float64, equations_density/float64]; N=233 data points
+INFO  2024-09-14 10:36:34,544 sensai.sklearn.sklearn_base:_fit_sklearn:152 - Fitting model for output variable 'market_cap'
+INFO  2024-09-14 10:36:34,610 sensai.vector_model:fit:400 - Fitting completed in 0.07 seconds: XGBGradientBoostedVectorRegressionModel[featureGenerator=MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]], targetTransformer=None, fitArgs={}, featureGeneratorNames=[NUMBER_PAGES, IMAGES_DENSITY, CHARACTERS_DENSITY, EQUATIONS_DENSITY], name=XGBoost, model[0]=XGBRegressor(base_score=None, booster=None, callbacks=None, colsample_bylevel=None, colsample_bynode=None, colsample_bytree=None, device=None, early_stopping_rounds=None, enable_categorical=False, eval_metric=None, feature_types=None, gamma=None, grow_policy=None, importance_type=None, interaction_constraints=None, learning_rate=None, max_bin=None, max_cat_threshold=None, max_cat_to_onehot=None, max_delta_step=None, max_depth=None, max_leaves=None, min_child_weight=None, missing=nan, monotone_constraints=None, multi_strategy=None, n_estimators=None, n_jobs=None, num_parallel_tree=None, random_state=42, ...)]
+DEBUG 2024-09-14 10:36:34,610 sensai.featuregen.feature_generator:generate:201 - Generating features with MultiFeatureGenerator[featureGenerators=[FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES], FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY], FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY], FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]]]
+DEBUG 2024-09-14 10:36:34,610 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[number_pages], exceptColumns=(), verifyColumnNames=True, name=NUMBER_PAGES]
+DEBUG 2024-09-14 10:36:34,611 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[images_density], exceptColumns=(), verifyColumnNames=True, name=IMAGES_DENSITY]
+DEBUG 2024-09-14 10:36:34,611 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[characters_density], exceptColumns=(), verifyColumnNames=True, name=CHARACTERS_DENSITY]
+DEBUG 2024-09-14 10:36:34,612 sensai.featuregen.feature_generator:generate:201 - Generating features with FeatureGeneratorTakeColumns[columns=[equations_density], exceptColumns=(), verifyColumnNames=True, name=EQUATIONS_DENSITY]
+INFO  2024-09-14 10:36:34,676 sensai.evaluation.eval_util:gather_results:289 - Evaluation results for market_cap: RegressionEvalStats[RRSE=5.442624635727181, R2=-28.622162925424426, MAE=30245607047.25, MSE=3.013628436633979e+22, RMSE=173598054039.61127, StdDevAE=170942936738.20847, N=100]
+INFO  2024-09-14 10:36:34,678 sensai.util.io.ResultWriter:write_text_file:72 - Saving text file results\market-cap-regression_full\20240914-103627\XGBoost_evaluator-results.txt
+DEBUG 2024-09-14 10:36:34,747 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,747 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,747 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,748 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,748 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:34,751 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,751 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,751 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,751 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,751 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:34,760 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,760 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,761 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,761 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,761 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:34,763 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,763 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,763 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,763 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,763 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:34,764 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,764 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,764 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,765 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,765 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:34,766 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,766 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,766 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,766 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,767 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:34,768 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,768 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,768 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,768 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,768 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:34,770 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,770 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,770 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,770 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,770 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:34,773 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:34,773 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:34,773 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:34,773 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:34,773 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:38,442 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\XGBoost_error-dist.png
+DEBUG 2024-09-14 10:36:40,729 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,729 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,729 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,729 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,729 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:40,733 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,734 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,734 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,734 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,734 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:40,740 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,740 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,740 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,740 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,740 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:40,742 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,742 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,742 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,742 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,742 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:40,743 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,743 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,743 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,743 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,743 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:40,744 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,744 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,744 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,744 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,745 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:40,746 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,746 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,746 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,746 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,746 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:40,747 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,747 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,748 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,748 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,748 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:40,749 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,749 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,749 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,749 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,749 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:40,758 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\XGBoost_heatmap-gt-pred.png
+DEBUG 2024-09-14 10:36:40,926 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,926 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,927 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,927 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,927 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 1189
+DEBUG 2024-09-14 10:36:40,929 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,930 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,930 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,930 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,930 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 2994
+DEBUG 2024-09-14 10:36:40,939 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,939 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,939 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,939 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,939 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 696
+DEBUG 2024-09-14 10:36:40,941 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,941 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,941 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,941 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,941 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 526
+DEBUG 2024-09-14 10:36:40,942 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,942 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,942 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,942 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,942 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 499
+DEBUG 2024-09-14 10:36:40,944 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,944 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,944 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,944 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,944 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 673
+DEBUG 2024-09-14 10:36:40,946 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,946 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,946 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,946 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,946 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 922
+DEBUG 2024-09-14 10:36:40,948 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,949 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,949 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,949 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,949 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 568
+DEBUG 2024-09-14 10:36:40,950 PIL.PngImagePlugin:call:191 - STREAM b'IHDR' 16 13
+DEBUG 2024-09-14 10:36:40,950 PIL.PngImagePlugin:call:191 - STREAM b'sBIT' 41 4
+DEBUG 2024-09-14 10:36:40,950 PIL.PngImagePlugin:_open:728 - b'sBIT' 41 4 (unknown)
+DEBUG 2024-09-14 10:36:40,950 PIL.PngImagePlugin:call:191 - STREAM b'pHYs' 57 9
+DEBUG 2024-09-14 10:36:40,950 PIL.PngImagePlugin:call:191 - STREAM b'IDAT' 78 626
+INFO  2024-09-14 10:36:40,961 sensai.util.io.ResultWriter:write_figure:109 - Saving figure results\market-cap-regression_full\20240914-103627\XGBoost_scatter-gt-pred.png
+INFO  2024-09-14 10:36:41,116 sensai.evaluation.eval_util:compare_models:462 - Model comparison results:
+                  RRSE         R2           MAE           MSE          RMSE      StdDevAE
+model_name                                                                               
+Linear        2.400114  -4.760547  2.834920e+10  5.860527e+21  7.655408e+10  7.111153e+10
+RandomForest  3.614422 -12.064044  2.170469e+10  1.329078e+22  1.152857e+11  1.132241e+11
+XGBoost       5.442625 -28.622163  3.024561e+10  3.013628e+22  1.735981e+11  1.709429e+11
+INFO  2024-09-14 10:36:41,119 sensai.util.io.ResultWriter:write_text_file:72 - Saving text file results\market-cap-regression_full\20240914-103627\model-comparison-results-simple-eval.txt
+INFO  2024-09-14 10:36:41,121 __main__:main:51 - Saving best model 'Linear' in results\models\regression\full\best_model.pickle
+INFO  2024-09-14 10:36:41,122 sensai.util.logging:run_main:109 - Done
