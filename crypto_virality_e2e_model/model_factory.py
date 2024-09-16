@@ -28,8 +28,8 @@ class RegressionModelFactory:
         create_linear: Create an instance of a linear regression model.
         create_xgb: Create an instance of a XGBoost regression model.
     """
-    BASE_FEATURES = (FeatureName.NUMBER_PAGES, FeatureName.IMAGES_DENSITY, FeatureName.CHARACTERS_DENSITY,
-        FeatureName.EQUATIONS_DENSITY)
+    BASE_FEATURES = (FeatureName.NUMBER_PAGES, FeatureName.IMAGES_DENSITY,
+                     FeatureName.CHARACTERS_DENSITY, FeatureName.EQUATIONS_DENSITY)
 
     @classmethod
     def create_rf(cls, name_suffix="", min_samples_leaf=1, **kwargs):

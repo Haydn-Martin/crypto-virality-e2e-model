@@ -4,7 +4,7 @@ from pathlib import Path
 def csv_data_path() -> Path:
     """
     Returns the location of the Spotify CSV data, allowing for script
-    executions in subfolders without worrying about the
+    executions in sub-folders without worrying about the
     relative location of the data.
 
     :return: the path to the CSV file

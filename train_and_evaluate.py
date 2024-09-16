@@ -21,8 +21,8 @@ def main():
     # set up (dual) tracking
     experiment_name = f"market-cap-regression_{dataset.tag()}"
     run_id = datetime_tag()
-    tracked_experiment = MLFlowExperiment(experiment_name, tracking_uri="", context_prefix=run_id + "_",
-        add_log_to_all_contexts=True)
+    tracked_experiment = MLFlowExperiment(experiment_name, tracking_uri="",
+                                          context_prefix=run_id + "_", add_log_to_all_contexts=True)
     result_writer = ResultWriter(os.path.join("results", experiment_name, run_id))
     logging.add_file_logger(result_writer.path("log.txt"))
 
