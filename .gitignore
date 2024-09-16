@@ -5,6 +5,10 @@ Notes.txt
 *.csv
 data/raw_data_gen/research/
 
+# Experiment outputs
+mlruns/
+results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
